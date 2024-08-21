@@ -4,4 +4,4 @@ git 리포지토리 주소
 https://github.com/Hwiwon-source/react-day10.git
 
 netlify 도메인 주소
-https://fantastic-kashata-cec2de.netlify.app
+https://incandescent-banoffee-3452f7.netlify.app
