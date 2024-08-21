@@ -5,7 +5,7 @@ const ProductCard = ({ item }) => {
   return (
     <div className="ProductCard">
       <div className="img-wrapper">
-        <img src={item?.img} />
+        <img src={item?.img} alt={`product${item?.id}_image`} />
       </div>
       <div>{item?.choice === true ? "Conscious choice" : ""}</div>
       <div>{item?.title}</div>
