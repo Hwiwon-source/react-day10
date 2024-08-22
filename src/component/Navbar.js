@@ -4,18 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import "./Navbar.css";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import Menu from "./Menu";
 
 const Navbar = () => {
-  const menuList = [
-    "여성",
-    "Divided",
-    "남성",
-    "신생아/유아",
-    "아동",
-    "H&M Home",
-    "Sale",
-    "지속가능성",
-  ];
   return (
     <div className="Navbar">
       <div className="Navbar-wrap">
@@ -33,12 +24,7 @@ const Navbar = () => {
           />
         </div>
         <div className="menu-area">
-          <ul className="menu-list m-0 p-0">
-            {menuList.map((menu) => {
-              return <li>{menu}</li>;
-            })}
-          </ul>
-
+          <Menu />
           <div className="search-box m-0">
             <FontAwesomeIcon icon={faSearch} />
             <input className="search-input" type="text" placeholder="드레스" />
