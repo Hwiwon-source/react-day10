@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from "react";
-import { Col, Container, Row, Dropdown, Button } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import "./ProductDetail.css";
 
