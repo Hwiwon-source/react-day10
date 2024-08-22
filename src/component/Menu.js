@@ -29,11 +29,7 @@ const Menu = () => {
       </div>
       <ul className={`nav-menu ${isOpen ? "show" : ""}`}>
         {menuList.map((item, idx) => {
-          return (
-            <li key={idx}>
-              <a href="#">{item}</a>
-            </li>
-          );
+          return <li key={idx}>{item}</li>;
         })}
       </ul>
     </div>
