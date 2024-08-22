@@ -5,19 +5,29 @@ import { faUser } from "@fortawesome/free-regular-svg-icons";
 import "./Navbar.css";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import Menu from "./Menu";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const goToLogin = () => {
+    navigate("/login");
+  };
+  const goToHome = () => {
+    navigate("/");
+  };
+
   return (
     <div className="Navbar">
       <div className="Navbar-wrap">
         <div>
-          <div className="login-button">
+          <div className="login-area" onClick={goToLogin}>
             <FontAwesomeIcon icon={faUser} />
             <div>로그인</div>
           </div>
         </div>
         <div className="logo-section">
           <img
+            onClick={goToHome}
             width="100px"
             src="https://static.vecteezy.com/system/resources/previews/023/871/762/non_2x/hm-brand-logo-symbol-black-design-hennes-and-mauritz-clothes-fashion-illustration-free-vector.jpg"
             alt="h&mLogo"

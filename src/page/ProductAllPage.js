@@ -22,7 +22,7 @@ const ProductAllPage = () => {
         <Row>
           {productList.map((i) => {
             return (
-              <Col lg={3}>
+              <Col lg={3} sm={6}>
                 <ProductCard item={i} />
               </Col>
             );

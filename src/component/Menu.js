@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import "./Menu.css"
+import React, { useState } from "react";
+import "./Menu.css";
 
 const menuList = [
   "여성",
@@ -17,24 +17,27 @@ const Menu = () => {
 
   const toggleMenu = () => {
     // alert("check")
-    setIsOpen(!isOpen)
-  }
+    setIsOpen(!isOpen);
+  };
 
   return (
     <div className="Menu">
       <div className={`hamburger ${isOpen ? "open" : ""}`} onClick={toggleMenu}>
-        <div className='bar'></div>
-        <div className='bar'></div>
-        <div className='bar'></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
       </div>
       <ul className={`nav-menu ${isOpen ? "show" : ""}`}>
-        {menuList.map((item) => {
-          return <li><a>{item}</a></li>;
+        {menuList.map((item, idx) => {
+          return (
+            <li key={idx}>
+              <a>{item}</a>
+            </li>
+          );
         })}
       </ul>
     </div>
+  );
+};
 
-  )
-}
-
-export default Menu
+export default Menu;
