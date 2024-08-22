@@ -2,9 +2,9 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import ProductAllPage from "./page/ProductAllPage";
 import Login from "./page/Login";
-import ProductDetail from "./page/ProductDetail";
+// import ProductDetail from "./page/ProductDetail";
 import Navbar from "./component/Navbar";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import PrivateRoute from "./route/PrivateRoute";
 
 // 1. 전체상품페이지, 로그인, 상품상세페이지 ... react router

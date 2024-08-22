@@ -31,7 +31,7 @@ const Menu = () => {
         {menuList.map((item, idx) => {
           return (
             <li key={idx}>
-              <a>{item}</a>
+              <a href="#">{item}</a>
             </li>
           );
         })}
