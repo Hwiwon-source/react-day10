@@ -7,6 +7,7 @@
 .ProductCard:hover {
   transform: scale(1.05);
   border: 3px inset #333 ;
+  z-index: 1;
 }
 
 .img-wrapper {

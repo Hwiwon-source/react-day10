@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Menu.css";
+import { Link } from "react-router-dom";
 
 const menuList = [
   "여성",
@@ -31,7 +32,9 @@ const Menu = () => {
         {menuList.map((item, idx) => {
           return (
             <li key={idx}>
-              <a href="#">{item}</a>
+              <Link className="nav-link" to="/">
+                {item}
+              </Link>
             </li>
           );
         })}
