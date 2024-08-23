@@ -6,7 +6,7 @@
 
 .ProductCard:hover {
   transform: scale(1.05);
-  border: 3px inset #333 ;
+  border: 3px inset #333;
   z-index: 1;
 }
 
@@ -16,15 +16,9 @@
 
 .img-wrapper img {
   width: 100%;
-  
+
 }
 
 .product-dis {
   padding: 10px 0;
-}
-
-@media(max-width: 575px){
-  .ProductCard {
-    margin: 15px;
-  }
 }

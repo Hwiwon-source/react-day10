@@ -1,13 +1,6 @@
 .Navbar {
   /* border: 3px solid red; */
-  padding: 30px 0;
-}
-
-.Navbar-wrap {
-  /* border: 3px solid orange; */
-  max-width: 1440px;
-  padding: 0 4%;
-  margin: 0 auto;
+  padding: 30px 15px;
 }
 
 .login-area {
